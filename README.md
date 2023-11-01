@@ -24,13 +24,25 @@ gradle
  
 ```
 
-## 类库说明
+## 类库说明 
 
 - 初始化 SDK
 
 ```java
+ import net.t1y.v5.*;
+```
+```java
 // 初始化 SDK 配置
- T1Cloud t1y= T1Cloud.Init("您的域名", 您的Application ID, "您的API Key", "您的Secret Key")
+ T1Cloud t1y= T1Cloud.init(new Option(......));
+ /**
+ Option 构造函数参数说明（按顺序）：
+ url（必填） : String  您的域名，开发环境可使用：Option.URL_DEFAULT;
+ RequestMode（选填） : int 请求模式，REQUEST_MODE_SYNC（同步） or REQUEST_MODE_ASYNC（异步）
+ Application_ID（必填） ：int 即Application ID（应用ID），请从T1后端云后台获取。
+ APIKey（必填）：string 即 API_Key , 请从T1后端云后台获取。
+ onSecretKeyGetInterface（选填）：OnSecretKeyGetInterface（接口），获取SecretKey的接口，可将SecretKey通过三方工具加密后，由该接口发起解密并回调。如：（）->return decrypt.code(xxxxxxxxx);
+ secretKey(选填）：String 即SecretKey ， 当启用其他混淆、加密、加固等防御手段后，可无需OnSecretKeyGetInterface，直接输入secretKey
+ */
 ```
 
 - 创建一条数据
