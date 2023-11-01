@@ -1,4 +1,4 @@
-T1 后端云 java SDK 开发文档
+T1 后端云 Java SDK 开发文档
 
 本文档是 T1 后端云 官方提供的 Java SDK，方便 Java 开发人员快速使用 T1 进行后端开发。
 
@@ -76,7 +76,7 @@ gradle
 
 ## 运行效果
 
-打开项目中的 `examples/main.java` 文件，可以看到如何使用 java SDK 相关的方法。
+打开项目中的 `examples/main.java` 文件，可以看到如何使用 Java SDK 相关的方法。
 
 ```java
 
