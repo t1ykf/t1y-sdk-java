@@ -8,7 +8,7 @@ T1 后端云 java SDK 开发文档
  jdk：8+
  
 ## SDK 导入
-
+gradle
 ```gradle
  dependencyResolutionManagement {
 		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
