@@ -36,8 +36,7 @@ gradle
  T1Cloud t1y= T1Cloud.init(new Option(......));
  /**
  Option 构造函数参数说明（按顺序）：
- url（必填） : String类型  您的域名，开发环境可使用：Option.URL_DEFAULT;
- RequestMode（选填） : int类型 请求模式 Option.REQUEST_MODE_SYNC（同步） or Option.REQUEST_MODE_ASYNC（异步）
+ url（必填） : String类型  您的域名，开发环境可使用Option.URL_DEFAULT
  Application_ID（必填） ：int类型 即Application ID（应用ID），请从T1后端云后台获取。
  APIKey（必填）：string类型  即 API_Key , 请从T1后端云后台获取。
  onSecretKeyGetInterface（选填）：OnSecretKeyGetInterface类型（接口），获取SecretKey的接口，可将SecretKey通过三方工具加密后，由该接口发起解密并回调。如：（）->return decrypt.code(xxxxxxxxx);
